@@ -1,8 +1,11 @@
-// Select all the sections
-const sections = document.querySelectorAll('section');
-
-// Loop through each section
-sections.forEach((section, index) => {
-    // Add a delay to each section's animation start time
-    section.style.animationDelay = `${index * 0.3}s`;
+document.getElementById('menuButton').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    var menuButtonImage = document.getElementById('menuButtonImage');
+    if (menu.style.display === 'none') {
+        menu.style.display = 'block';
+        menuButtonImage.src = 'img/circle-xmark.svg';
+    } else {
+        menu.style.display = 'none';
+        menuButtonImage.src = 'img/circle-play.svg';
+    }
 });
