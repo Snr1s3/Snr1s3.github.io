@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+.animate-title {
+    animation: fadeIn 2s;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.animate-card {
+    animation: slideIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes slideIn {
+    0% {transform: translateY(-50px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
